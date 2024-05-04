@@ -1,6 +1,7 @@
 ---
-title: Welcome to Quartz
+title: Welcome
 ---
+I'm using [Quartz](https://quartz.jzhao.xyz/) to share some of the scripts, command snippets, and short reference cheatsheets that I've collected in [Obsidian](https://obsidian.md/). 
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+These notes are primarily here for my own reference, but maybe you'll get something useful out of them too.
+
