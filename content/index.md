@@ -5,6 +5,6 @@ I'm using [Quartz](https://quartz.jzhao.xyz/) to publish some of the scripts, co
 
 These notes are primarily here for my own reference, but maybe you'll get something useful out of them too.
 
-For more words accompanying code blocks, maybe take a look at my main blogs:
+For code blocks with more words accompanying them, maybe take a look at my main blogs:
 - [runtimeterror](https://runtimeterror.dev)
 - [Scribbles 'n Bits](https://scribbles.jbowdre.lol)
