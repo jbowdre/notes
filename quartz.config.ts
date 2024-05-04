@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "[runtimeterror notes]",
+    pageTitle: "[ notes ]",
     enableSPA: true,
     enablePopovers: true,
     analytics: null,
@@ -28,21 +28,21 @@ const config: QuartzConfig = {
         lightMode: {
           light: "#faf8f8",
           lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
+          gray: "#6d6c6c",
           darkgray: "#4e4e4e",
           dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
+          secondary: "#d36060",
+          tertiary: "#682523",
           highlight: "rgba(143, 159, 169, 0.15)",
         },
         darkMode: {
           light: "#090909",
-          lightgray: "#1c1c1c",
+          lightgray: "#4e4e4e",
           gray: "#6d6c6c",
           darkgray: "#abaaaa",
           dark: "#d8d8d8",
           secondary: "#d36060",
-          tertiary: "#84a59d",
+          tertiary: "#682523",
           highlight: "rgba(143, 159, 169, 0.15)",
         },
       },
