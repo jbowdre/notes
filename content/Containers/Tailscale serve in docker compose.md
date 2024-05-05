@@ -52,4 +52,6 @@ services:
     network_mode: service:tailscale
 ```
 
-
+---
+See also:
+- [[Cloudflared in docker compose]]
