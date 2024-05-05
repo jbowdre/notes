@@ -11,7 +11,10 @@ const config: QuartzConfig = {
     pageTitle: "[ notes ]",
     enableSPA: true,
     enablePopovers: true,
-    analytics: null,
+    analytics: {
+      provider: "tinylytics",
+      siteId: "FxiYzPTqRqpT_F-yN1YV",
+    },
     locale: "en-US",
     baseUrl: "notes.runtimeterror.dev",
     ignorePatterns: ["private", "templates", ".obsidian"],
