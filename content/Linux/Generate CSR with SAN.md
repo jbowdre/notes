@@ -6,7 +6,7 @@ tags:
 ---
 1. Generate server private key
 ```shell
-openssl genrsa -out harbor.lab.bowdre.net.key 4096
+openssl genrsa -out notes.runtimeterror.dev.key 4096
 ```
 2. Generate configuration file `csr.conf`
 ```
@@ -21,7 +21,7 @@ C = US
 ST = Alabama
 L = Huntsville
 O = runtimeterror.dev
-OU = notes
+OU = blog
 CN = $(hostname)
 
 [ v3_req ]
@@ -36,7 +36,7 @@ DNS.3 = $(hostname -i)
 ```
 3. Generate CSR
 ```shell
-openssl req -new -out harbor.lab.bowdre.net.csr -key harbor.lab.bowdre.net.key -config csr.conf
+openssl req -new -out notes.runtimeterror.dev.csr -key notes.runtimeterror.dev.key -config csr.conf
 ```
 
 ---
