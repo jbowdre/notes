@@ -26,3 +26,7 @@ sudo apt update && sudo apt install -y powershell
 ```powershell
 Install-Module VMware.PowerCLI
 ```
+
+---
+See also:
+- [[Uninstall all VMware Powershell modules]]
