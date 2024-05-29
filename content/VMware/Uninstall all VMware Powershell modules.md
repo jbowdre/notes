@@ -14,7 +14,7 @@ Function Uninstall-VMwareModules {
   $Modules += (Get-Module -ListAvailable VMware.*).Name
   If (($Modules.Count - 1) -gt 0) {
     Write-Host ($Modules.Count - 1) "VMware modules found."
-    $Modules | ForEach-Object -Paralell {
+    $Modules | ForEach-Object -Parallel {
       Write-Host "Uninstalling $PSItem..."
       Uninstall-Module $PSItem -Force
     }
