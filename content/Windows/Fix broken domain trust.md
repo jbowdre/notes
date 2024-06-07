@@ -3,6 +3,7 @@ tags:
   - windows
   - activedirectory
   - powershell
+  - troubleshooting
 ---
 ```powershell
 Test-ComputerSecureChannel

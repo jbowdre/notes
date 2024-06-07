@@ -3,6 +3,7 @@ tags:
   - linux
   - shell
   - disk
+  - troubleshooting
 ---
 ### Find largest files
 ```shell

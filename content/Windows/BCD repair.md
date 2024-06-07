@@ -1,6 +1,7 @@
 ---
 tags:
   - windows
+  - troubleshooting
 ---
 ```shell
 bootrec /FixMbr

@@ -1,6 +1,8 @@
 ---
 tags:
   - linux
+  - ssl
+  - troubleshooting
 ---
 When attempting to curl *anything* returns something like
 ```
