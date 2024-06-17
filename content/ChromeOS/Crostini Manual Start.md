@@ -14,12 +14,20 @@ termina
 Total Size (bytes): 3939495936
 ```
 
-If it's there, try manually starting it with `vmc start termina`:
+If it's there *and not listed as running*, try manually starting it with `vmc start termina`:
 
 ```shell
 crosh> vmc start termina
 (termina) chronos@localhost ~ $
 ```
+
+If `termina` is already running and/or `vmc start termina` yields a timeout error, use `vsh termina` to access a shell in the already-running VM instead:
+
+```shell
+crosh> vsh termina
+(termina) chronos@localhost ~ $
+```
+
 
 From the `(termina)` prompt, check for the default Linux container (named `penguin`) with `lxc list`:
 
