@@ -36,6 +36,7 @@ export type Analytics =
   }
   | {
       provider: "cabin"
+      host?: string
   }
 
 export interface GlobalConfiguration {

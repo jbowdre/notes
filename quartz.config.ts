@@ -13,6 +13,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: {
       provider: "cabin",
+      host: "https://cabin.runtimeterror.dev",
     },
     locale: "en-US",
     baseUrl: "notes.runtimeterror.dev",
