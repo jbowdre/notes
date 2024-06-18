@@ -6,22 +6,30 @@ tags:
 ---
 If the Linux Development Environment isn't starting normally for you, you might see if you can start it manually.
 
-Start by pulling up the Chrome OS developer shell (`Ctrl` + `Alt` + `T`) and executing `vmc list`. If it's there, you should see information about the `termina` VM returned:
+Start by pulling up the Chrome OS developer shell (`Ctrl` + `Alt` + `T`) and executing `vmc list`. If it's there, you should see information about the `termina` VM returned. 
 
+If it's *not currently running*, the output looks like this:
 ```shell
-crosh> vmc list
-termina
-Total Size (bytes): 3939495936
+crosh> vmc list
+termina (322123612160 bytes, raw)
+Total Size (bytes): 322123612160
 ```
 
-If it's there *and not listed as running*, try manually starting it with `vmc start termina`:
+If it *is* running, it'll be more like this:
+```shell
+crosh> vmc list
+termina (322123612160 bytes, min shrinkable size 179911524352 bytes, raw) running
+Total Size (bytes): 322123612160
+```
+
+If `termina` is not yet running, try manually starting it with `vmc start termina`:
 
 ```shell
 crosh> vmc start termina
 (termina) chronos@localhost ~ $
 ```
 
-If `termina` is already running and/or `vmc start termina` yields a timeout error, use `vsh termina` to access a shell in the already-running VM instead:
+If `termina` is already running (and/or `vmc start termina` yields a timeout error), use `vsh termina` to access a shell in the already-running VM instead:
 
 ```shell
 crosh> vsh termina
