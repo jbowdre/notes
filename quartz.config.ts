@@ -12,8 +12,7 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "tinylytics",
-      siteId: "FxiYzPTqRqpT_F-yN1YV",
+      provider: "cabin",
     },
     locale: "en-US",
     baseUrl: "notes.runtimeterror.dev",
