@@ -33,12 +33,13 @@ Want to use specific packages when you `cd` into a directory? Handy for ensuring
 }
 ```
 
-
 `.envrc`:
 ```shell
 #!/usr/bin/env direnv
 use flake .
 ```
+
+> Be sure to `git add` and `git commit` your flake file!
 
 ```shell
 direnv allow
