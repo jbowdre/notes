@@ -7,4 +7,4 @@ These notes are primarily here for my own reference, but maybe you'll get someth
 
 For code blocks with more words accompanying them, maybe take a look at my main blogs:
 - [runtimeterror](https://runtimeterror.dev)
-- [weblog](https://blog.jbowdre.lol)
+- [srs bsns (lol)](https://srsbsns.lol)

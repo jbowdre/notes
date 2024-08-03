@@ -22,12 +22,4 @@ To send an event named `upvote {{ post_title }}` when the element with class `up
 ```
 ([ref](https://docs.withcabin.com/events.html))
 
-More @[weblog](https://blog.jbowdre.lol/tracking-bear-upvotes-from-my-cabin/)
-
-### Retrieving (WIP)
-
-I ultimately want to also display the count of events alongside the button (specifically on non-Bear sites). So far I've got this command to retrieve events from the public dashboard for a property:
-
-```shell
-curl -s 'https://withcabin.com/api/stats-public?domain=blog.jbowdre.lol&id=M0NgWW4YpQpk&startKey=2024-06-15&endKey=2024-06-21&dataType=PATH' | jq '.events[] | select(.label == "kudos") |.children[] | {label, value}'
-```
+More @[srs bsns (lol)](https://srsbsns.lol/tracking-bear-upvotes-from-my-cabin/)
