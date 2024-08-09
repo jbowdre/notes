@@ -1,6 +1,6 @@
 ---
 tags:
-  - "#linux"
+  - linux
   - packages
   - ubuntu
   - debian

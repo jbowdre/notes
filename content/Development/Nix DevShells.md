@@ -1,6 +1,6 @@
 ---
 tags:
-  - "#linux"
+  - linux
   - nix
 ---
 Want to use specific packages when you `cd` into a directory? Handy for ensuring consistent build environments across multiple machines...
@@ -26,7 +26,7 @@ Want to use specific packages when you `cd` into a directory? Handy for ensuring
         package4
       ];
       shellHook = ''
-	    source .env 
+	    source .env
       '';
     };
   };

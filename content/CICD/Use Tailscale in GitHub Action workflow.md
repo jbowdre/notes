@@ -1,6 +1,6 @@
 ---
 tags:
-  - "#tailscale"
+  - tailscale
   - github
 ---
 Create new [OAuth Client](https://login.tailscale.com/admin/settings/oauth)with Read+Write on the Devices scope, tied to a specified tag.

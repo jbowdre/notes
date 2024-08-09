@@ -1,6 +1,6 @@
 ---
 tags:
-  - "#linux"
+  - linux
   - nfs
   - kerberos
   - activedirectory
@@ -69,7 +69,7 @@ Create the folder:
 ```shell
 sudo mkdir -p -m 755 /home/users
 ```
-If you're using a separate disk/partition for the exported homedirs, go ahead and mount that to `/home/users`.  
+If you're using a separate disk/partition for the exported homedirs, go ahead and mount that to `/home/users`.
 
 Either way, you'll also want to adjust the SELinux context for the new folder:
 ```shell

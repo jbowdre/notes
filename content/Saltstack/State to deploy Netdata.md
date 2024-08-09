@@ -1,7 +1,7 @@
 ---
 tags:
-  - "#salt"
-  - "#tailscale"
+  - salt
+  - tailscale
 ---
 Deploys [netdata](https://github.com/netdata/netdata) and publishes it with [Tailscale Serve](https://tailscale.com/kb/1242/tailscale-serve)
 
