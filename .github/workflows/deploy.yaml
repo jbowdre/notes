@@ -54,13 +54,8 @@ jobs:
         run: |
           rsync -avz --delete -e ssh public/ deploy@${{ secrets.QUARTZ_HOST }}:${{ secrets.QUARTZ_CONTENT_PATH }}
       - name: Purge Bunny CDN cache
-        uses: ayeressian/bunnycdn-storage-deploy@v2.2.2
-        with:
-          source: ""
-          destination: ""
-          storageZoneName: ""
-          upload: "false"
-          remove: "false"
-          accessKey: "${{ secrets.BUNNY_API_KEY }}"
-          pullZoneId: "${{ secrets.BUNNY_ZONE_ID }}"
-          purgePullZone: "true"
+        run: |
+          curl --request POST \
+            --url https://api.bunny.net/pullzone/${{ secrets.BUNNY_ZONE_ID }}/purgeCache \
+            --header "AccessKey: ${{ secrets.BUNNY_API_KEY }}" \
+            --header "content-type: application/json"
