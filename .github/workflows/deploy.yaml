@@ -1,10 +1,12 @@
 name: Deploy Notes
 
-# only run on changes to default branch
+# run every 12 hours, on changes to default branch, and manually
 on:
   push:
     branches:
       - v4
+  schedule:
+    - cron: 0 */12 * * *
 
 concurrency: # prevent concurrent deploys doing strange things
   group: deploy
@@ -20,14 +22,18 @@ jobs:
     name: Build and deploy Quartz site
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Quartz
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Checkout notes
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ secrets.NOTES_REPO }}
+          token: ${{ secrets.NOTES_REPO_PAT }}
+          path: content
       - name: Build Quartz
         run: |
           npm ci
