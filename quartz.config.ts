@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "notes.runtimeterror.dev",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "templates", ".obsidian", "!(*.md)"],
     defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
