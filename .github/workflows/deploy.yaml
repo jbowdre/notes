@@ -1,11 +1,12 @@
 name: Deploy Notes
 
-# run every 12 hours, on changes to default branch, and manually
+# run on changes to default branch, for changes in the content repo, and manually
 on:
   push:
     branches:
       - v4
   repository_dispatch:
+  workflow_dispatch:
 
 concurrency: # prevent concurrent deploys doing strange things
   group: deploy
