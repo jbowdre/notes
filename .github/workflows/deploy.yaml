@@ -1,6 +1,6 @@
 name: Deploy Notes
 
-# run on changes to default branch, for changes in the content repo, and manually
+# run on changes to default (v4) branch, repository_dispatch events, and manual executions
 on:
   push:
     branches:
@@ -24,16 +24,16 @@ jobs:
     steps:
       - name: Checkout Quartz
         uses: actions/checkout@v4
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
       - name: Checkout notes
         uses: actions/checkout@v4
         with:
           repository: ${{ secrets.NOTES_REPO }}
           token: ${{ secrets.NOTES_REPO_PAT }}
           path: content
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
       - name: Build Quartz
         run: |
           npm ci
