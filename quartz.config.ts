@@ -20,8 +20,6 @@ const config: QuartzConfig = {
     ignorePatterns: [
       "private",
       "templates",
-      ".obsidian",
-      "_plug",
       "**/!(*.md)"
     ],
     defaultDateType: "created",
