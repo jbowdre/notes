@@ -39,6 +39,11 @@ export type Analytics =
       provider: "cabin"
       host?: string
   }
+  | {
+      provider: "bearlytics"
+      host: string
+      siteId: string
+  }
 
 export interface GlobalConfiguration {
   pageTitle: string

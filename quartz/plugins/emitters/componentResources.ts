@@ -161,6 +161,14 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
       })(window, document, "clarity", "script", "${cfg.analytics.projectId}");\`
       document.head.appendChild(clarityScript)
     `)
+  } else if (cfg.analytics?.provider === "bearlytics") {
+    componentResources.afterDOMLoaded.push(`
+      const bearlyticsScript = document.createElement('script")
+      bearlyticsScript.src = "${cfg.analytics.host}/script.js"
+      bearlyticsScript.setAttribute("data-website-id", "${cfg.analytics.siteId})
+      bearlyticsScript.defer = true
+      document.head.appendChild(bearlyticsScript)
+    `)
   }
 
   if (cfg.enableSPA) {
