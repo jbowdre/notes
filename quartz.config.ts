@@ -13,8 +13,9 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "cabin",
-      host: "https://cabin.runtimeterror.dev",
+      provider: "bearlytics",
+      host: "https://bearlytics.runtimeterror.dev",
+      siteId: "QVVDCYQ"
     },
     locale: "en-US",
     baseUrl: "notes.runtimeterror.dev",
