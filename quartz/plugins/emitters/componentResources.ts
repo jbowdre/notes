@@ -165,7 +165,7 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
     componentResources.afterDOMLoaded.push(`
       const bearlyticsScript = document.createElement("script")
       bearlyticsScript.src = "${cfg.analytics.host}/script.js"
-      bearlyticsScript.setAttribute("data-website-id", "${cfg.analytics.siteId}")
+      bearlyticsScript.setAttribute("data-site", "${cfg.analytics.siteId}")
       bearlyticsScript.defer = true
       document.head.appendChild(bearlyticsScript)
     `)
