@@ -24,6 +24,7 @@ const config: QuartzConfig = {
       "**/!(*.md)"
     ],
     defaultDateType: "modified",
+    generateSocialImages: true,
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
