@@ -10,8 +10,8 @@ export const sharedPageComponents: SharedLayout = {
     links: {
       "[runtimeterror]": "https://runtimeterror.dev",
       "[srs bsns (lol)]": "https://srsbsns.lol",
-      "[github]": "https://github.com/jbowdre",
-      "[omg]": "https://jbowdre.lol",
+      "[git]": "https://git.vim.wtf/wq",
+      "[omg]": "https://jwq.lol",
     },
   }),
 }
